@@ -4,7 +4,7 @@
 echo Files 
 for item in *
 do
-	$find -type f 2> /dev/null | wc -l
+ls -1 | wc -l
 done
 
 echo Directories

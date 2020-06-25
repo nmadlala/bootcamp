@@ -1,7 +1,17 @@
-#include<unistd.h>
-#
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmadlala <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/23 11:40:58 by nmadlala          #+#    #+#             */
+/*   Updated: 2020/06/23 11:41:39 by nmadlala         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putchar(char c ) {write (STDOUT_FILENO, &c, 1);}
+#include<unistd.h>
+
 void ft_print_reverse_alphabet(void)
 {
 	char i;

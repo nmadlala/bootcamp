@@ -1,20 +1,29 @@
 #include <stdio.h>
 
-int main()
+int ft_neg(int i)
 {
-	int num;
-	printf ("Please enter a number!" );
+	write(1,&c,1);
+	return 0;
+}
 
+char ft neg(char f)
+{
+	int f;
+	f='0';
 
-	if (num == 0)
+	if()
+}
+
+int main()
+{	
+
+	int	i=0;
+	int val;
+	val=0;
+	while(val == i)
 	{
-		if (num == 0)
-			printf("Number Entered is: \n");
-		else
-			printf("N");
+		if(i == )
 	}
-	else
-		printf("P");
 
 	return 0;
 }

@@ -1,40 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadlala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/20 09:01:34 by nmadlala          #+#    #+#             */
-/*   Updated: 2020/06/23 12:11:59 by nmadlala         ###   ########.fr       */
+/*   Created: 2020/06/23 09:09:00 by nmadlala          #+#    #+#             */
+/*   Updated: 2020/06/23 09:53:59 by nmadlala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#!/bin/zsh
 #include <unistd.h>
 
-char ft_putchar(char c)
+int ft_val (char c)
 {
-	write(1,&c ,1);
-	return(0);
+	write(1, &c, 1);
+	return (0);
 }
 
-void  ft_print_comb(void)
+void ft_print_comb2(void)
 {
-	int i,j,k;
+	int i =0;
+	int j=0;
+	char i1= '0';
+	char j1='0';
 
-	for (i = 0;i <= 9;i++)
+	while (i <= 99)
 	{
-		for (j  = i + 1; j <= 9; j++)
+		while (j <= 99)
 		{
-			for (k  = j + 1; k <= 9; k++)
-			{
-				return ( '%d%d%d\n', i , j ,k);
-			}
+			ft_val(i1);
+			ft_val(j1);
+			ft_val(',');
+			ft_val(' ');
+
+			++j;
+			++j1;
+			
 		}
+		++i;
+		++i1;
 	}
 }
 
 int main (void)
 {
-	ft_print_comb();
-	return 0;
+	ft_print_comb2();
+	return (0);
 }
