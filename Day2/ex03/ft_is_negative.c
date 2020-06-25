@@ -1,29 +1,28 @@
 #include <stdio.h>
+#include <unistd.h>
 
-int ft_neg(int i)
+int ft_putchar(char c)
 {
 	write(1,&c,1);
 	return 0;
 }
 
-char ft neg(char f)
+void ft_is_negative(int n)
 {
-	int f;
-	f='0';
+	if(n >= 0)
+	{
+		ft_putchar('P');
+	}
 
-	if()
+	else if(n<0)
+	{
+		ft_putchar('N');
+	}
+	
 }
 
 int main()
 {	
-
-	int	i=0;
-	int val;
-	val=0;
-	while(val == i)
-	{
-		if(i == )
-	}
-
+	ft_is_negative(42);
 	return 0;
 }
