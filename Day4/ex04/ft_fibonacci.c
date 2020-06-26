@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadlala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 11:40:58 by nmadlala          #+#    #+#             */
-/*   Updated: 2020/06/25 14:47:41 by nmadlala         ###   ########.fr       */
+/*   Created: 2020/06/26 13:49:25 by nmadlala          #+#    #+#             */
+/*   Updated: 2020/06/26 14:16:39 by nmadlala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#!/bin/zsh
+#include <stdio.h>
 
-int ft_putchar(char c)
+int ft_fibonacci(int index)
 {
-	write(1, &c, 1);
-	return (0);
-}
-
-void ft_print_reverse_alphabet(void)
-{
-	char i;
-	i = 'z';
-	while (i >= 'a')
-	{
-		ft_putchar(i);
-		i--;	
+	if (index < 0)
+	{	
+		return(-1);
 	}
-}
+	if(index == 0)
+	{
+		return (0);
+	}
+	if(index == 1)
+	{
+		return (1);
+	}
 
-int main(void)
-{
-	ft_print_reverse_alphabet();
-	return 0;
+	return (ft_fibonacci(index)+ ft_fibonacci(index - 2));
 }

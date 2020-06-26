@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadlala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 11:40:58 by nmadlala          #+#    #+#             */
-/*   Updated: 2020/06/25 14:47:41 by nmadlala         ###   ########.fr       */
+/*   Created: 2020/06/26 13:36:08 by nmadlala          #+#    #+#             */
+/*   Updated: 2020/06/26 13:46:22 by nmadlala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#!/bin/zsh
 
-#include<unistd.h>
+#include <stdio.h>
 
-int ft_putchar(char c)
+unsigned int ft_recursive_factorial(int nb)
 {
-	write(1, &c, 1);
-	return (0);
-}
-
-void ft_print_reverse_alphabet(void)
-{
-	char i;
-	i = 'z';
-	while (i >= 'a')
+	int i;
+		i =nb;
+   	int	fact;
+   		fact  =1;
+	while(n/i !=n)
 	{
-		ft_putchar(i);
-		i--;	
+		fact =fact *i;
+		i--;
 	}
+	return fact;
 }
 
-int main(void)
+int main()
 {
-	ft_print_reverse_alphabet();
+	int num =42;
+	printf("Factorial of %d is %d", num, ft_recursive_factorial(num));
 	return 0;
 }
+

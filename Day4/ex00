@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmadlala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 11:40:58 by nmadlala          #+#    #+#             */
-/*   Updated: 2020/06/25 14:47:41 by nmadlala         ###   ########.fr       */
+/*   Created: 2020/06/26 09:25:34 by nmadlala          #+#    #+#             */
+/*   Updated: 2020/06/26 09:39:36 by nmadlala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#!/bin/zsh
 
-int ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (0);
-}
+/*#include <unistd.h>*/
+#include <stdio.h>
 
-void ft_print_reverse_alphabet(void)
+unsigned int ft_iterative_factorial(unsigned int n)
 {
-	char i;
-	i = 'z';
-	while (i >= 'a')
+	if(n ==0)
 	{
-		ft_putchar(i);
-		i--;	
+		return 1;
 	}
+	return n * ft_iterative_factorial(n - 1);
 }
 
-int main(void)
+int main ()
 {
-	ft_print_reverse_alphabet();
+	int num =5;
+	printf("factorial of %d is %d", num, ft_iteractive_factorial(num));
 	return 0;
 }
