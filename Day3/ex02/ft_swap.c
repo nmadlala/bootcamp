@@ -5,6 +5,12 @@ void ft_putchar(char ptr);
 void ft_putnbr(int ptr);
 void ft_addr(void *ptr);
 
+void ft_swap( int *a, int *b);
+{
+	printf("%d", *a, *b);
+	return(0);
+}
+
 int main(void);
 {
 	int a;

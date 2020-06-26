@@ -2,7 +2,13 @@
 #include <unistd.h>
 
 void ft_putnbr(int ptr);
-void ft_putaddr( void * ptr);
+void ft_putaddr( void *ptr);
+
+void ft_ultimate_ft(int *********nbr)
+{
+	write(1, &nbr, 1);
+	return (0);
+}
 
 
 int main(void)
